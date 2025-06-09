@@ -1,0 +1,45 @@
+{
+  "name": "whatsapp-morning-bot",
+  "version": "2.0.0",
+  "description": "Sevgilinize her sabah otomatik günaydın mesajı gönderen Node.js botu",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "test": "node test.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop whatsapp-bot",
+    "pm2:restart": "pm2 restart whatsapp-bot",
+    "pm2:logs": "pm2 logs whatsapp-bot"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "automation",
+    "morning",
+    "message",
+    "nodejs",
+    "cron",
+    "scheduler"
+  ],
+  "author": "WhatsApp Morning Bot",
+  "license": "MIT",
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "node-cron": "^3.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "winston": "^3.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/whatsapp-morning-bot.git"
+  }
+}
